@@ -36,7 +36,6 @@
 
 <body>
 
-    
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -50,7 +49,7 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#pricing" class="scroll">Pricing</a></li>
-            <li><a href="#">Sign in</a></li>
+            <li><a href="#">Like</a></li>
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
@@ -63,7 +62,7 @@
             <a href="index.html"><img src="img/logo.svg" alt="Logo"></a>
           </div>
           <div class="col-xs-6 signin text-right navbar-nav">
-            <a href="#pricing" class="scroll">Pricing</a>&nbsp; &nbsp;<a href="#">Sign in</a>
+            <a href="#pricing" class="scroll">Pricing</a>&nbsp; &nbsp;<div class="fb-like" data-href="https://joeangel.github.io/170330test/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
           </div>
         </div>
         
@@ -288,6 +287,7 @@
       </div>
     </footer>
     
+    <div id="fb-root"></div>
     
     <!-- Javascript
     ================================================== -->
@@ -297,7 +297,13 @@
     <script src="js/wow.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
-
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.8";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
    
     </body>
 </html>
